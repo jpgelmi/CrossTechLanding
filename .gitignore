@@ -63,10 +63,6 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules/
-jspm_packages/
-
 # TypeScript v1 declaration files
 typings/
 
@@ -165,8 +161,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
-# End of https://www.gitignore.io/api/node,sublimetext,windows,macos,sass
-
-dist/
