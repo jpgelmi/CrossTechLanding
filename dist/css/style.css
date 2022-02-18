@@ -1674,6 +1674,12 @@ main {
     animation: rotate-animation 1.5s ease-out forwards;
 }
 @keyframes rotate-animation {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(-450deg);}
-} 
+    from {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+    to {
+		transform: rotate(-450deg);
+		opacity: 1;
+	}
+}
