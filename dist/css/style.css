@@ -1669,3 +1669,11 @@ main {
 		margin-bottom: 0;
 	}
 }
+
+.rotation-class {
+    animation: rotate-animation 1.5s ease-out forwards;
+}
+@keyframes rotate-animation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-450deg);}
+} 
