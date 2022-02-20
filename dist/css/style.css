@@ -1164,13 +1164,6 @@ label {
 	height: 178.78%;
 	background-image: url("../images/hero-back-illustration.svg");
 }
-.hero-figure::after {
-	top: -35.6%;
-	left: 99.6%;
-	width: 57.2%;
-	height: 87.88%;
-	background-image: url("../images/hero-top-illustration.svg");
-}
 .hero-figure-box {
 	position: absolute;
 	top: 0;
@@ -1667,5 +1660,19 @@ main {
 	.footer-links {
 		order: 1;
 		margin-bottom: 0;
+	}
+}
+
+.rotation-class {
+    animation: rotate-animation 1.5s ease-out forwards;
+}
+@keyframes rotate-animation {
+    from {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+    to {
+		transform: rotate(-450deg);
+		opacity: 1;
 	}
 }
