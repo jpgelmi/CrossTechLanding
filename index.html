@@ -174,17 +174,30 @@
                 </div>
             </section>
 
-			<section class="cta section">
+			<section class="cta section form_box">
 				<div class="container">
-					<div class="cta-inner section-inner">
-						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
-						</div>
+					<div class="">
+						<h3 class="section-title mt-0">Contact us!</h3>
+
+                        <form class="form" action="https://formsubmit.co/pablo.dominguez@uc.cl" method="POST">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input class="message_box" type="message" name="message" placeholder="Message" required>
+                            <input type="hidden" name="_cc" value="jpgelmi@uc.cl">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Se envio el mensaje correctamente">
+                            <input type="hidden" name="_template" value="table">
+                            
+                            <div class="cta-cta">
+                                <button class="button button-primary button-wide-mobile" type="submit" cl>Send</button>
+                            </div>
+                        </form>
 					</div> 
 				</div>
 			</section>
         </main>
+
+        
 
         <footer class="site-footer">
             <div class="container">
