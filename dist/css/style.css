@@ -1739,7 +1739,3 @@ input:-webkit-autofill {
 input {
 	-webkit-background-clip: text !important;
 }
-
-.message_box {
-	height: 200px;
-}
