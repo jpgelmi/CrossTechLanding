@@ -32,7 +32,7 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">CrossTech</h1>
 	                        <p class="hero-paragraph">Striving to create top-level software for solution solving</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Know us!</a><a class="button" href="#">Get in touch</a></div>
+	                        <div class="hero-cta"><a class="button button-primary" href="#products">Products</a><a class="button" href="#know-us">Know us!</a></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -53,7 +53,7 @@
                 </div>
             </section>
 
-            <section class="features section">
+            <section id="products" class="features section">
                 <div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
                         <div class="features-wrap">
@@ -63,6 +63,7 @@
 										<img src="dist/images/html.png" alt="Feature 01" style="width: 35%; height: auto;">
                                     </div>
                                     <h4 class="feature-title mt-24">Landing pages</h4>
+
                                     <p class="text-sm mb-0">We have the ability to create custom web pages for our clients.</p>
                                 </div>
                             </div>
@@ -72,6 +73,7 @@
 										<img src="dist/images/pencil-and-ruler.png" alt="Feature 02" style="width: 36%; height: auto;">
                                     </div>
                                     <h4 class="feature-title mt-24">Measurement software</h4>
+
                                     <p class="text-sm mb-0">If your company needs custom software, we can create it for you.</p>
                                 </div>
                             </div>
@@ -116,7 +118,7 @@
                 </div>
             </section>
 
-            <section class="pricing section">
+            <section id="know-us" class="pricing section">
                 <div class="container-sm">
                     <div class="pricing-inner section-inner">
                         <div class="pricing-header text-center">
@@ -130,7 +132,6 @@
                                         <div class="pricing-table-header pb-24">
                                             <div class="pricing-table-price"><span class="pricing-table-price-amount h1">Juan Pablo Gelmi</span></div>
                                         </div>
-										<div class="pricing-table-features-title text-xs pt-24 pb-24">Experiencia</div>
                                         <ul class="pricing-table-features list-reset text-xs">
                                             <li>
                                                 <span>Second year of engineering</span>
@@ -154,7 +155,6 @@
                                         <div class="pricing-table-header pb-24">
                                             <div class="pricing-table-price"><span class="pricing-table-price-amount h1">Pablo Dominguez</span></div>
                                         </div>
-										<div class="pricing-table-features-title text-xs pt-24 pb-24">Experiencia</div>
                                         <ul class="pricing-table-features list-reset text-xs">
                                             <li>
                                                 <span>Lorem ipsum dolor sit nisi</span>
@@ -177,17 +177,30 @@
                 </div>
             </section>
 
-			<section class="cta section">
+			<section class="cta section form_box">
 				<div class="container">
-					<div class="cta-inner section-inner">
-						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
-						</div>
+					<div class="">
+						<h3 class="section-title mt-0">Contact us!</h3>
+
+                        <form class="form" action="https://formsubmit.co/pablo.dominguez@uc.cl" method="POST">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="message" name="message" placeholder="Message" required>
+                            <input type="hidden" name="_cc" value="jpgelmi@uc.cl">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Se envio el mensaje correctamente">
+                            <input type="hidden" name="_template" value="table">
+                            
+                            <div class="cta-cta">
+                                <button class="button button-primary button-wide-mobile" type="submit" cl>Send</button>
+                            </div>
+                        </form>
 					</div> 
 				</div>
 			</section>
         </main>
+
+        
 
         <footer class="site-footer">
             <div class="container">
@@ -245,5 +258,15 @@
     </div>
 
     <script src="dist/js/main.min.js"></script>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }); 
+    </script>
 </body>
 </html>
